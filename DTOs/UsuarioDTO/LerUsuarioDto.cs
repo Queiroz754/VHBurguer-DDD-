@@ -1,4 +1,4 @@
-﻿namespace VHBurguer3.DTOs
+﻿namespace VHBurguer3.DTOs.Usuario
 {
     public class LerUsuarioDto
     {

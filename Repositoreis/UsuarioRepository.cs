@@ -31,7 +31,7 @@ namespace VHBurguer3.Repositoreis
             return _context.Usuario.FirstOrDefault(u => u.Email == email);
         }
 
-        public bool EmailExistente(string email)
+        public bool EmailExiste(string email)
         {
             //Any retorna true ou false para validar a exis
             //tencia de um usuario com o e-mail
