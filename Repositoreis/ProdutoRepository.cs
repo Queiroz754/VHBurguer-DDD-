@@ -4,7 +4,7 @@ using VHBurguer3.Contexts;
 using VHBurguer3.Domains;
 using VHBurguer3.Interfaces;
 
-namespace VHBurguer3.Repositoreis.Usuario
+namespace VHBurguer3.Repositoreis.UsuarioDTO
 {
     public class ProdutoRepository : IProdutoRepository
     {
