@@ -101,7 +101,7 @@ namespace VHBurguer3.Applications.Services
                 UsuarioID = usuarioid
             };
 
-            _repository.Adicionar(produto, produtoDto.Categoria);
+            _repository.Adicionar(produto, produtoDto.CategoriaIds);
             return ProdutoParaDTO.ConverterParaDto(produto);
         }
 

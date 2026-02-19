@@ -5,10 +5,88 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Usuario": {
+    "/api/ProdutoControrller": {
       "get": {
         "tags": [
-          "Usuario"
+          "ProdutoControrller"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LerProdutoDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LerProdutoDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LerProdutoDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ProdutoControrller/{id}": {
+      "get": {
+        "tags": [
+          "ProdutoControrller"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LerProdutoDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LerProdutoDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LerProdutoDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/UsuarioControrller": {
+      "get": {
+        "tags": [
+          "UsuarioControrller"
         ],
         "responses": {
           "200": {
@@ -44,7 +122,7 @@
       },
       "post": {
         "tags": [
-          "Usuario"
+          "UsuarioControrller"
         ],
         "requestBody": {
           "content": {
@@ -89,10 +167,10 @@
         }
       }
     },
-    "/api/Usuario/{id}": {
+    "/api/UsuarioControrller/{id}": {
       "get": {
         "tags": [
-          "Usuario"
+          "UsuarioControrller"
         ],
         "parameters": [
           {
@@ -130,7 +208,7 @@
       },
       "put": {
         "tags": [
-          "Usuario"
+          "UsuarioControrller"
         ],
         "parameters": [
           {
@@ -187,7 +265,7 @@
       },
       "delete": {
         "tags": [
-          "Usuario"
+          "UsuarioControrller"
         ],
         "parameters": [
           {
@@ -207,10 +285,10 @@
         }
       }
     },
-    "/api/Usuario/email/{email}": {
+    "/api/UsuarioControrller/email/{email}": {
       "get": {
         "tags": [
-          "Usuario"
+          "UsuarioControrller"
         ],
         "parameters": [
           {
@@ -261,6 +339,60 @@
             "nullable": true
           },
           "senha": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LerProdutoDto": {
+        "type": "object",
+        "properties": {
+          "produtoID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "preco": {
+            "type": "number",
+            "format": "double"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusProduto": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "categoriaIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "categoria": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "usuarioID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "usuarioNome": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuarioEmail": {
             "type": "string",
             "nullable": true
           }

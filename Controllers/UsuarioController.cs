@@ -10,11 +10,11 @@ namespace VHBurguer3.Controlles
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class UsuarioControrller : ControllerBase
     {
         private readonly UsuarioService _service;
 
-        public UsuarioController(UsuarioService service)
+        public UsuarioControrller(UsuarioService service)
         {
             _service = service;
         }
