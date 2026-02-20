@@ -38,7 +38,7 @@ namespace VHBurguer3.Applications.Atenticacao
             // Converter a chave para bytes (necessario para criar aassinatura)
             var keyBytes = Encoding.UTF8.GetBytes(chave);
 
-            if(keyBytes.Length > 32)
+            if(keyBytes.Length < 32)
             {
                 throw new DomainException("Jwt: Key precissa ter pelo menos 32 caracteres(256 bits).");
             }

@@ -8,11 +8,11 @@ namespace VHBurguer3.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AutentificacaoController : ControllerBase
+    public class AutenticacaoController : ControllerBase
     {
         private readonly AutenticacaoService _service;
 
-        public AutentificacaoController(AutenticacaoService service)
+        public AutenticacaoController(AutenticacaoService service)
         {
             _service = service;
         }

@@ -45,7 +45,7 @@ namespace VHBurguer3.Applications.Services
             TokenDto novoToken = new TokenDto { Token = token };
 
             return novoToken;
-            }
+            
         }
     }
 }
