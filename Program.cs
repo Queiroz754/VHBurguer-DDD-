@@ -60,11 +60,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         {
             // Verifica se o emissor do token é válido
             // (se bate com o issuer configurado).
-            ValidateIssuer = false,
+            ValidateIssuer = true,  
 
             // Verifica se o destinatário do token é válido
             // (se bate com o audience configurado).
-            ValidateAudience = false,
+            ValidateAudience = true,
 
             // Verifica se o token ainda está dentro do prazo de validade.
             // Se já expirou, a requisição será negada.

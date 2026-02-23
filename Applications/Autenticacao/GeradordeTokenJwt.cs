@@ -21,11 +21,11 @@ namespace VHBurguer3.Applications.Atenticacao
         {
             //KEY -> chave secreta usada para assinar o token
             //garante que o token nao foi alterado
-            var chave = _config["Jwt:key"]!;
+            var chave = _config["Jwt:Key"]!;
 
             //ISSUER -> quem gerou o token (nome da API/ sistema  que gerou)
             //a API valida se o token veio doemissor correto.
-            var issuer = _config["Jwy:Issuer"]!;
+            var issuer = _config["Jwt:Issuer"]!;
 
             //AUDIENCE -> para quemo tokem foi criado 
             //define qual sistema pode usar o token
