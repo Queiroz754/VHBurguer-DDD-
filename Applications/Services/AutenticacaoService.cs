@@ -19,7 +19,7 @@ namespace VHBurguer3.Applications.Services
 
         // compara a hash SHA256
 
-        private static bool VerificarSenha(string senhaDigitada, byte[]senhaHashBanco)
+        private static bool VerificarSenha(string senhaDigitada, byte[] senhaHashBanco)
         {
             using var sha = System.Security.Cryptography.SHA256.Create();
             var hashDigitado = sha.ComputeHash(System.Text.Encoding.UTF8.GetBytes(senhaDigitada));
@@ -29,7 +29,7 @@ namespace VHBurguer3.Applications.Services
 
         public TokenDto Login(LoginDto loginDto)
         {
-            Usuario usuario = _repository.ObterPorEmail(loginDto.Email);
+            Usuario? usuario = _repository.ObterPorEmail(loginDto.Email);
 
             if(usuario == null)
             {

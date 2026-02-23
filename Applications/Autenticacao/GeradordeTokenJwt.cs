@@ -45,7 +45,7 @@ namespace VHBurguer3.Applications.Atenticacao
             //Cria a chave de seguranca usada para assinar o token
             var securitykey = new SymmetricSecurityKey(keyBytes);
 
-            var credentia = new SigningCredentials(securitykey, SecurityAlgorithms.HmacSha256);
+            var credentials = new SigningCredentials(securitykey, SecurityAlgorithms.HmacSha256);
 
             //Claims -> Informacoes do usuario que vao dentro do token 
             //essas informacoes podem ser recuperadas  na API para identificar quem esta logado
@@ -64,7 +64,7 @@ namespace VHBurguer3.Applications.Atenticacao
                 audience: audience,                               //quem pode usar o token
                 claims: claims,                                   //dados do token
                 expires: DateTime.Now.AddMinutes(expiraEmMinutos),//validade do token
-                signingCredentials: credentia                     //assinatura de seguranca
+                signingCredentials: credentials                     //assinatura de seguranca
                 );          
             //Converter o token para string e essa string e  envida para o cliente
             return new JwtSecurityTokenHandler().WriteToken(token);
