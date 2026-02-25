@@ -156,7 +156,7 @@ namespace VHBurguer3.Applications.Services
             HorarioAlteracaoProduto.ValidarHorario();
 
             Produto produto = _repository.ObterPorId(id);
-            if (produto != null)
+            if (produto == null)
             {
                 throw new DomainException("Produto não encontrado.");
 

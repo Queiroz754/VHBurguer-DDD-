@@ -51,13 +51,17 @@ namespace VHBurguer3.Controlles
         [HttpGet("{id}")]
         public ActionResult<LerProdutoDto> ObterPorId(int id)
         {
-            LerProdutoDto produto = _service.ObterPorId(id);
-
-            if (produto == null)
+            try
             {
-                return NotFound();
+                LerProdutoDto produto = _service.ObterPorId(id);
+                return Ok(produto);
             }
-            return Ok(produto);
+            
+            catch(DomainException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            
         }
 
         //GET -> api/produto/5/imagem

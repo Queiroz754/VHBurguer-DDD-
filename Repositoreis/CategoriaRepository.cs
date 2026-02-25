@@ -1,4 +1,5 @@
 ﻿using System.Data.SqlTypes;
+using VH_Burguer.Interfaces;
 using VHBurguer3.Contexts;
 using VHBurguer3.Domains;
 using VHBurguer3.Interfaces;
