@@ -40,6 +40,11 @@ namespace VHBurguer3.Applications.Services
                 throw new DomainException("E-mail eu senha inválidos");
                 }
 
+            if (usuario.StatusUsuario ==  false)
+            {
+                throw new DomainException("Este usuario está inativo.");
+            }
+
             var token = _tokeJwt.GerarToken(usuario);
 
             TokenDto novoToken = new TokenDto { Token = token };

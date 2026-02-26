@@ -19,8 +19,8 @@ namespace VHBurguer3.Controlles
             _service = service;
         }
 
+        
         [HttpGet] //Lista Informações
-
         public ActionResult<List<LerUsuarioDto>> Listar()
         {
             List<LerUsuarioDto> usuarios =  _service.Listar();
