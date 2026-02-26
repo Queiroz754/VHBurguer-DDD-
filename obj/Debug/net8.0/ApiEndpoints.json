@@ -410,9 +410,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "VHBurguer3.Controlles.UsuarioControrller",
+    "ContainingType": "VHBurguer3.Controlles.UsuarioController",
     "Method": "Listar",
-    "RelativePath": "api/UsuarioControrller",
+    "RelativePath": "api/Usuario",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -430,9 +430,9 @@
     ]
   },
   {
-    "ContainingType": "VHBurguer3.Controlles.UsuarioControrller",
+    "ContainingType": "VHBurguer3.Controlles.UsuarioController",
     "Method": "Adicionar",
-    "RelativePath": "api/UsuarioControrller",
+    "RelativePath": "api/Usuario",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -456,9 +456,9 @@
     ]
   },
   {
-    "ContainingType": "VHBurguer3.Controlles.UsuarioControrller",
+    "ContainingType": "VHBurguer3.Controlles.UsuarioController",
     "Method": "ObterPorId",
-    "RelativePath": "api/UsuarioControrller/{id}",
+    "RelativePath": "api/Usuario/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -482,9 +482,9 @@
     ]
   },
   {
-    "ContainingType": "VHBurguer3.Controlles.UsuarioControrller",
+    "ContainingType": "VHBurguer3.Controlles.UsuarioController",
     "Method": "Atualizar",
-    "RelativePath": "api/UsuarioControrller/{id}",
+    "RelativePath": "api/Usuario/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -513,9 +513,9 @@
     ]
   },
   {
-    "ContainingType": "VHBurguer3.Controlles.UsuarioControrller",
+    "ContainingType": "VHBurguer3.Controlles.UsuarioController",
     "Method": "Remover",
-    "RelativePath": "api/UsuarioControrller/{id}",
+    "RelativePath": "api/Usuario/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -529,9 +529,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "VHBurguer3.Controlles.UsuarioControrller",
+    "ContainingType": "VHBurguer3.Controlles.UsuarioController",
     "Method": "ObterPorEmail",
-    "RelativePath": "api/UsuarioControrller/email/{email}",
+    "RelativePath": "api/Usuario/email/{email}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

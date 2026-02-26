@@ -10,11 +10,11 @@ namespace VHBurguer3.Controlles
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioControrller : ControllerBase
+    public class UsuarioController : ControllerBase
     {
         private readonly UsuarioService _service;
 
-        public UsuarioControrller(UsuarioService service)
+        public UsuarioController(UsuarioService service)
         {
             _service = service;
         }
@@ -42,13 +42,14 @@ namespace VHBurguer3.Controlles
         [HttpGet("email/{email}")]
         public ActionResult<LerUsuarioDto> ObterPorEmail(string email)
         {
+            try
+            { 
             LerUsuarioDto usuario = _service.ObterPorEmail(email);
-            {
-                if (usuario == null)
-                {
-                    return NotFound();
-                }
                 return Ok(usuario);
+            }
+            catch (DomainException ex)
+            {
+                return NotFound(ex.Message);
             }
         }
         [HttpPost]

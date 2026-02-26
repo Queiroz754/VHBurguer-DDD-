@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07053CAD-58CD-EFB2-FFFA-29FF3CCFCD7B}|VHBurguer3.csproj|c:\\users\\54579886860\\documents\\projetos  keke-sasa\\vhburguer3\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07053CAD-58CD-EFB2-FFFA-29FF3CCFCD7B}|VHBurguer3.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07053CAD-58CD-EFB2-FFFA-29FF3CCFCD7B}|VHBurguer3.csproj|c:\\users\\54579886860\\documents\\projetos  keke-sasa\\vhburguer3\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07053CAD-58CD-EFB2-FFFA-29FF3CCFCD7B}|VHBurguer3.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07053CAD-58CD-EFB2-FFFA-29FF3CCFCD7B}|VHBurguer3.csproj|c:\\users\\54579886860\\documents\\projetos  keke-sasa\\vhburguer3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07053CAD-58CD-EFB2-FFFA-29FF3CCFCD7B}|VHBurguer3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07053CAD-58CD-EFB2-FFFA-29FF3CCFCD7B}|VHBurguer3.csproj|c:\\users\\54579886860\\documents\\projetos  keke-sasa\\vhburguer3\\dtos\\categoriadto\\criarcategoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07053CAD-58CD-EFB2-FFFA-29FF3CCFCD7B}|VHBurguer3.csproj|solutionrelative:dtos\\categoriadto\\criarcategoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07053CAD-58CD-EFB2-FFFA-29FF3CCFCD7B}|VHBurguer3.csproj|c:\\users\\54579886860\\documents\\projetos  keke-sasa\\vhburguer3\\controllers\\autenticacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07053CAD-58CD-EFB2-FFFA-29FF3CCFCD7B}|VHBurguer3.csproj|solutionrelative:controllers\\autenticacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAaAAAAAAAAAA==",
+              "Title": "AutenticacaoController.cs",
+              "DocumentMoniker": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\Controllers\\AutenticacaoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AutenticacaoController.cs",
+              "ToolTip": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\Controllers\\AutenticacaoController.cs",
+              "RelativeToolTip": "Controllers\\AutenticacaoController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T13:45:04.373Z",
+              "WhenOpened": "2026-02-26T13:16:59.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAcwD4AAAANAAAAAAAAAA==",
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwE8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T13:29:36.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CriarCategoriaDto.cs",
-              "DocumentMoniker": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\DTOs\\CategoriaDTO\\CriarCategoriaDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\CategoriaDTO\\CriarCategoriaDto.cs",
-              "ToolTip": "C:\\Users\\54579886860\\Documents\\Projetos  keke-sasa\\VHBurguer3\\DTOs\\CategoriaDTO\\CriarCategoriaDto.cs",
-              "RelativeToolTip": "DTOs\\CategoriaDTO\\CriarCategoriaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:38:09.682Z",
+              "WhenOpened": "2026-02-26T13:10:55.381Z",
               "EditorCaption": ""
             }
           ]

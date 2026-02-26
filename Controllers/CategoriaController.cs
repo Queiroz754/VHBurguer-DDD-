@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using VHBurguer3.Applications.Services;
 using VHBurguer3.DTOs.CategoriaDTO;
+using VHBurguer3.Exeception;
 
 namespace VHBurguer3.Controllers
 {
@@ -27,13 +28,15 @@ namespace VHBurguer3.Controllers
         [HttpPost("{id}")]
         public ActionResult<LerCategoriaDto> ObterPorId(int id)
         {
-            LerCategoriaDto categoria = _service.ObterPorId(id);
-            if (categoria == null)
+            try
             {
-                return NotFound();
+            LerCategoriaDto categoria = _service.ObterPorId(id);
+                return Ok(categoria);
             }
-
-            return Ok(categoria);
+            catch(DomainException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         [HttpPost]

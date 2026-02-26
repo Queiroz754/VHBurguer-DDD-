@@ -108,7 +108,7 @@ namespace VHBurguer3.Controlles
         }
 
         [HttpPut("{id}")]
-        [Consumes("multipart/from-data")]
+        [Consumes("multipart/form-data")]
         [Authorize]
         public ActionResult Atualizar(int id, [FromForm] AtualizarProdutoDto produtoDto)
         {

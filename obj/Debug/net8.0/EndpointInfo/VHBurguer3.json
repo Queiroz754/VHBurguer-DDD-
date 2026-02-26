@@ -409,7 +409,7 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/from-data": {
+            "multipart/form-data": {
               "schema": {
                 "type": "object",
                 "properties": {
@@ -681,10 +681,10 @@
         }
       }
     },
-    "/api/UsuarioControrller": {
+    "/api/Usuario": {
       "get": {
         "tags": [
-          "UsuarioControrller"
+          "Usuario"
         ],
         "responses": {
           "200": {
@@ -720,7 +720,7 @@
       },
       "post": {
         "tags": [
-          "UsuarioControrller"
+          "Usuario"
         ],
         "requestBody": {
           "content": {
@@ -765,10 +765,10 @@
         }
       }
     },
-    "/api/UsuarioControrller/{id}": {
+    "/api/Usuario/{id}": {
       "get": {
         "tags": [
-          "UsuarioControrller"
+          "Usuario"
         ],
         "parameters": [
           {
@@ -806,7 +806,7 @@
       },
       "put": {
         "tags": [
-          "UsuarioControrller"
+          "Usuario"
         ],
         "parameters": [
           {
@@ -863,7 +863,7 @@
       },
       "delete": {
         "tags": [
-          "UsuarioControrller"
+          "Usuario"
         ],
         "parameters": [
           {
@@ -883,10 +883,10 @@
         }
       }
     },
-    "/api/UsuarioControrller/email/{email}": {
+    "/api/Usuario/email/{email}": {
       "get": {
         "tags": [
-          "UsuarioControrller"
+          "Usuario"
         ],
         "parameters": [
           {
